@@ -12,6 +12,7 @@
     width: 100%;
     height: 100px;
     background-image: url(fondo-cabecera.jpg);
+    opacity: 0.7;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,10 +64,28 @@
 
 
 
+/*BOTON FINAL*/
+.boton2{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #998477;
+    color: white;
+    border: 1px solid black;
+}
+
+.boton2:hover {
+    background-color: rgb(152, 147, 128);
+    color: rgb(0, 0, 0);
+}
 /*pantalla 1*/
 .info {
     height: 100vh;
-    background-color: rgb(151, 139, 118);
+    background-image: url(imagen-fondo-pag1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,55 +95,60 @@
 .info h1{
     font-size: 40px;
     text-decoration:underline;
-    color:aliceblue;
+    color:rgb(0, 0, 0);
     text-shadow: 15px 5px 10px rgb(0, 0, 0) ;
 }
 
 .info h2{
-    color:aliceblue;
+    color:rgb(0, 0, 0);
     text-shadow: 15px 5px 10px rgb(0, 0, 0) ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .boton {
     text-decoration: none;
-    color:aliceblue;
+    color:rgb(0, 0, 0);
     padding: 20px;
     border: 1px solid black;
     border-radius: 15px;
     margin-top: 20px;
     background-color: rgba(206, 182, 172, 0.5);
-    text-shadow: 5px 5px 5px rgb(0, 0, 0) ;
 }
 /*pantalla 2*/
-.tarjetas {
-    display: grid;
-    grid-template-columns: repeat(4 /*columnas*/, minmax(300px,1fr)/*tamaños*/); /*auto-fill es otra cosa*/
-    align-items: center;
-    gap: 30px;
-    margin-top: 4rem;
-    margin: 10px;
-}
-.card1{
-    padding: 75px;
-    height: 350px;
-    border: 1px solid grey;
-    border-radius: 500px;
-
-    background-image: url(imagen-perro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.categorias {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    height: 100vh;
+    gap: 20px;
+    padding: 100px 20px;
+    background-image: url(imagen-fondo-pag2.jpg);
 }
 
-.card1:hover{
-    transform: scale(1.04);
+.tarjeta {
+    background: lightgray;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 300px;
+    width: 350px;
+    height: 350px;
 }
 
+.tarjeta img{
+    width: 100%;
+    height: 300px;
+    border-radius: 300px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+/*SECCIONES*/
+section {
+    padding: 50px;
+}
 /*pantalla 3*/
 .perro {}
 
@@ -140,4 +164,9 @@
 /*pantalla 4*/
 .exoticos {}
 
-.piedepagina {}
+.final {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
