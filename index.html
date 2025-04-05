@@ -4,57 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptAnimals</title>
     <link rel="stylesheet" href="style.css">
-    <title>Project-Veterinaria</title>
+
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
 </head>
 
+
+
 <body>
+    <!-- CABECERA FIJA -->
     <div class="cabecera">
-        <div class="logo">MiTienda!</div>
+        <div class="logo">AdoptAnimals</div>
         <nav class="nav">
             <ul>
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#">SECCIONES</a></li>
-                <li><a href="#">INFORMACION</a></li>
-                <li><a href="#">SOBRE-NOSOTROS</a></li>
+                <li><a href="#categorias">SECCIONES</a></li>
+                <li><a href="#perros">INFORMACION</a></li>
+                <li><a href="#footer">SOBRE-NOSOTROS</a></li>
             </ul>
         </nav>
     </div>
+
+
+
+
+
+
+    <!-- INFO BOTON-->
     <div class="info">
-        <h1>¡PROYECTO ANIMALES!</h1>
-        <h2>Adopta tu animal de compañía que más se adapte a tí</h2>
+        <h1>Proyecto AdoptAnimals!</h1>
+        <h2>Adopta tu animal de compañía que más se adapte a ti</h2>
         <a href="#" class="boton">Sobre nosotros...</a>
     </div>
 
     <a href="#final">
         <button class="boton2">Ir al final</button>
     </a>
-    
-    <section class="categorias">
+
+
+
+
+
+
+    <!-- TARJETAS -->
+    <section class="categorias" id="categorias">
         <a href="#perros">
             <div class="tarjeta">
-                <img src="imagen-perro.jpg">
+                <img src="imagen-perro.jpg" alt="Perros">
             </div>
         </a>
-
         <a href="#gatos">
             <div class="tarjeta">
-                <img src="imagen-gato.jpg">
+                <img src="imagen-gato.jpg" alt="Gatos">
             </div>
         </a>
         <a href="#pajaros">
             <div class="tarjeta">
-                <img src="imagen-pajaro.jpg">
+                <img src="imagen-pajaro.jpg" alt="Pájaros">
             </div>
         </a>
         <a href="#otros">
-            <div class="tarjeta" href='#otros'>
-                <img src="imagen-pez.jpg">
+            <div class="tarjeta">
+                <img src="imagen-pez.jpg" alt="Otros">
             </div>
         </a>
-
     </section>
 
+
+
+
+
+    <!-- SECCIONES -->
     <section id="perros">
         <h2>Sección de Perros</h2>
         <p>Información sobre adopción de perros.</p>
@@ -74,11 +97,36 @@
         <h2>Sección de Otros</h2>
         <p>Información sobre adopción de otros animales.</p>
     </section>
-    </div>
 
-    <footer id="final">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una tienda dedicada a la adopción responsable de animales.</p>
+
+
+
+    <!--  FOOTER -->
+    <footer id="footer" class="sobrenosotros">
+        <p>"Somos una tienda dedicada a la adopción responsable de animales."
+            <br>
+            <br>
+            "Si consultas nuestra disposición de animales encontraras una gran variedad para elegir a tu compañero."
+            <br>
+            <br>
+            "Nos encantaría recibir tus comentarios y sugerencias! Contacta con nosotros en nuestras redes sociales."
+        </p>
+        <section class="columnas">
+            <div>
+                <h1>Facebook</h1>
+                <a href="https://www.facebook.com/adoptanimals/" target="_blank"><img src="facebook.png"
+                        alt="Facebook"></a>
+            </div>
+            <div>
+                <h1>Instagram</h1>
+                <a href="https://www.instagram.com/adoptanimals/" target="_blank"><img src="instagram.png"
+                        alt="Instagram"></a>
+            </div>
+            <div>
+                <h1>Twitter</h1>
+                <a href="https://twitter.com/adoptanimals" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            </div>
+        </section>
     </footer>
 </body>
 

@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    /*lo he buscado para que al scrollear con el ratón se vea más suave*/
+}
+
+
+/*BODY*/
+body {
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*CABECERA FIJA*/
@@ -11,12 +19,12 @@
     left: 0;
     width: 100%;
     height: 100px;
+
     background-image: url(fondo-cabecera.jpg);
-    opacity: 0.7;
+    opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 
     color: white;
     display: flex;
@@ -32,8 +40,7 @@
     padding: 20px;
     background-color: rgba(150, 150, 141, 0.6);
     font-size: 1.5rem;
-    font-family: monospace;
-
+    font-family: 'Permanent Marker', cursive;
 }
 
 .nav ul {
@@ -46,7 +53,7 @@
 }
 
 .nav ul li a {
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
     font-size: large;
 
@@ -58,14 +65,13 @@
 }
 
 .nav ul li a:hover {
-    color: rgb(228, 219, 231);
+    color: white;
     background-color: rgba(89, 74, 55, 0.6);
 }
 
 
-
-/*BOTON FINAL*/
-.boton2{
+/*BOTÓN FLOTANTE FINAL*/
+.boton2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -73,13 +79,16 @@
     background-color: #998477;
     color: white;
     border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .boton2:hover {
     background-color: rgb(152, 147, 128);
-    color: rgb(0, 0, 0);
+    color: black;
 }
-/*pantalla 1*/
+
+/* Pantalla 1 */
 .info {
     height: 100vh;
     background-image: url(imagen-fondo-pag1.jpg);
@@ -90,39 +99,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.info h1{
-    font-size: 40px;
-    text-decoration:underline;
-    color:rgb(0, 0, 0);
-    text-shadow: 15px 5px 10px rgb(0, 0, 0) ;
+.info h1 {
+    font-size: 48px;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 1px 5px 10px rgb(53, 50, 50);
+    font-family: 'Permanent Marker', cursive;
 }
 
-.info h2{
-    color:rgb(0, 0, 0);
-    text-shadow: 15px 5px 10px rgb(0, 0, 0) ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.info h2 {
+    color: black;
+    text-shadow: 15px 5px 10px rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 .boton {
     text-decoration: none;
-    color:rgb(0, 0, 0);
+    color: black;
     padding: 20px;
     border: 1px solid black;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: rgba(206, 182, 172, 0.5);
 }
-/*pantalla 2*/
+
+/* Pantalla 2 */
 .categorias {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 100px 20px;
+    padding: 120px 20px;
     background-image: url(imagen-fondo-pag2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 .tarjeta {
@@ -130,43 +148,118 @@
     padding: 20px;
     text-align: center;
     cursor: pointer;
+    /*queda más bonito con esto aunque hasta ahora no lo hayamos usado en clase*/
     border-radius: 300px;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.tarjeta img{
+.tarjeta img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     border-radius: 300px;
+
 }
 
 .tarjeta:hover {
     transform: scale(1.05);
 }
 
-/*SECCIONES*/
+/* Secciones Animales */
 section {
-    padding: 50px;
-}
-/*pantalla 3*/
-.perro {}
-
-/*pantalla 4*/
-.gato {}
-
-/*pantalla 5*/
-.pajaro {}
-
-/*pantalla 6*/
-.pez {}
-
-/*pantalla 4*/
-.exoticos {}
-
-.final {
-    background: black;
-    color: white;
+    padding: 100px 40px;
     text-align: center;
-    padding: 20px;
+    color: white;
+}
+
+#perros,
+#gatos,
+#pajaros,
+#otros {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*Propiedad que me ha añadido la IA, que hace que el fondo no scrollee*/
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+#perros {
+    background-image: url(fondo-perros.jpg);
+}
+
+#gatos {
+    background-image: url(fondo-gatos.jpg);
+}
+
+#pajaros {
+    background-image: url(fondo-pajaros.jpg);
+}
+
+#otros {
+    background-image: url(fondo-otros.jpg);
+}
+
+section h2 {
+    font-size: 36px;
+
+}
+
+section p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+/* Footer */
+footer.sobrenosotros {
+    background-image: url(veterinaria-logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    padding: 60px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer.sobrenosotros p {
+    color: white;
+    font-size: 36px;
+    font-size: 25px;
+    font-style: italic;
+
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+
+.columnas h1 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.columnas a {
+    background-color: #343434;
+    text-decoration: none;
 }
