@@ -398,9 +398,7 @@ footer img {
     
         border: 1px solid black;
         padding: 5px;
-        background-color: rgba(174, 158, 137, 0.6);
-        box-shadow: 5px 8px 10px #343434;
-        border-radius: 30px;
+        
     }
     
     .nav ul li a:hover {
