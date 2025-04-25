@@ -134,6 +134,59 @@ body {
     background-color: rgba(206, 182, 172, 0.5);
 }
 
+
+
+
+/*slider CSS JAVASCRIPT*/
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.slide {
+    min-width: 100%;
+    display: none;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    filter: brightness(0.95);
+}
+
+.slide.active {
+    display: block;
+}   
+
+/*TEXTO*/
+.slider-texto {
+    position: absolute;
+    top: 200px;
+    left:20px;
+    justify-items:center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.slider-texto h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.slider-texto p {
+    font-size: 20px;
+}
+
+
+
+
 /* Pantalla 2 */
 .categorias {
     display: flex;
@@ -185,7 +238,6 @@ section {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     /*Propiedad que me ha añadido la IA, que hace que el fondo no scrollee*/
     display: flex;
     margin-top: 10px;
