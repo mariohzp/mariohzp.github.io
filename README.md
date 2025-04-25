@@ -1,17 +1,42 @@
 # mariohzp.github.io
-PRESENTACION PROYECTO:
+🐾 AdoptAnimals
+AdoptAnimals es una página web dedicada a fomentar la adopción responsable de animales de compañía.
+___________________________________________________________________________________________________________________
+📂 ESTRUCTURA:
+├── index.html
+├── style.css
+├── index.js
+├── /img
+│   ├── veterinaria-logo.jpg
+│   ├── imagen-fondo-pag1.jpg
+│   ├── imagen-fondo-pag2.jpg
+│   ├── fondo-perros.jpg
+│   ├── fondo-gatos.jpg
+│   ├── fondo-pajaros.jpg
+│   ├── fondo-otros.jpg
+│   ├── imagen-perro.jpg
+│   ├── imagen-gato.jpg
+│   ├── imagen-pajaro.jpg
+│   ├── imagen-pez.jpg
+│   ├── facebook.png
+│   ├── instagram.png
+│   └── twitter.png
+___________________________________________________________________________________________________________________
 
-"landing-page" sobre tienda de adopción de animales.
+✨ Funcionalidades principales
+✅ Cabecera fija con navegación suave entre secciones
 
-En la que incluiré una cabecera :
-  logo
-  imagen representativa
-  listado menu
-  
-Tarjetas indice:
-  con imagenes representativas
-  
-Pie de página:
-  
+✅ Slider de imágenes automático con transición cada 3 segundos
 
-Incluyendo tarjetas y presentacion de los animales.
+✅ Secciones temáticas para distintos tipos de animales
+
+✅ Botón flotante para ir al final de la página
+
+✅ Formulario de contacto
+
+✅ Integración con redes sociales
+
+___________________________________________________________________________________________________________________
+👨‍💻 Autor
+Desarrollado por Mario Hernández
+___________________________________________________________________________________________________________________
