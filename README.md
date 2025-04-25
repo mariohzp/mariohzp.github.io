@@ -3,10 +3,10 @@
 AdoptAnimals es una página web dedicada a fomentar la adopción responsable de animales de compañía.
 ___________________________________________________________________________________________________________________
 📂 ESTRUCTURA:
-─ index.html
-─ style.css
-- index.js
-- /img
+-index.html
+-style.css
+-index.js
+-/img
 ___________________________________________________________________________________________________________________
 
 ✨ Funcionalidades principales
